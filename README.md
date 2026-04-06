@@ -67,7 +67,7 @@ Examples:
 
 ## Issue -> File Mapping
 
-Each issue must result in
+Each issue must result in:
 
 - A note file (for concepts), OR
 - A project folder (for practical implementations)
