@@ -37,7 +37,7 @@ It is designed to:
 
 ### One Issue = One Concept
 
-Each Github issue represents a single concept to learn
+Each GitHub issue represents a single concept to learn.
 
 ---
 
