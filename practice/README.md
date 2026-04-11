@@ -147,31 +147,9 @@ docker rm -f pg-mastery
 
 ## Optional: Docker Compose (Recommended)
 
-Create a `docker-compose.yml` in root:
+A `docker-compose.yml` file is already provided in the project root.
 
-```yaml
-version: '3.9'
-
-services:
-  postgres:
-    image: postgres
-    container_name: pg-mastery
-    restart: always
-    environment:
-      POSTGRES_DB: mastery
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin123
-    ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
-```
-
-Run:
-
+### Start the database
 ```bash
 docker-compose up -d
 ```
@@ -184,7 +162,7 @@ docker-compose down
 
 ---
 
-## 💾 Persistent Data
+## Persistent Data
 
 The volume ensures:
 
