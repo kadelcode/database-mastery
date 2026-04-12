@@ -1,9 +1,3 @@
-INSERT INTO transactions (user_id, amount, type)
-VALUES
-(1, 2000, 'debit'),
-(1, 5000, 'credit'),
-(2, 1000, 'debit');
-
 -- Query all users
 SELECT * FROM users;
 
