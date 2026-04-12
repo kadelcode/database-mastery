@@ -3,7 +3,7 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     email VARCHAR(100) UNIQUE,
-    balance DECIMAL DEFAULT 0,
+    balance DECIMAL(15, 2) NOT NULL DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
