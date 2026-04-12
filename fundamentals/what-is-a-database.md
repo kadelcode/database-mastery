@@ -1,20 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [What is a Database?](#what-is-a-database)
-  - [Key Concepts](#key-concepts)
-    - [Data vs Database vs DBMS](#data-vs-database-vs-dbms)
-  - [Why Do Databases Exist?](#why-do-databases-exist)
-    - [Problems with File Storage:](#problems-with-file-storage)
-    - [Databases Solve This:](#databases-solve-this)
-  - [Real-World Examples](#real-world-examples)
-    - [Banking System](#banking-system)
-    - [E-commerce Platform](#e-commerce-platform)
-  - [How Databases Are Used in Systems](#how-databases-are-used-in-systems)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # What is a Database?
 
 A database is an organized collection of data that is stored, managed, and easily accessed electronically.
@@ -65,9 +48,9 @@ Before databases, systems used file storage (e.g., JSON, CSV, text files).
 
 ### Banking System
 - Stores:
- - Users
- - Accounts
- - Transactions
+    - Users
+    - Accounts
+    - Transactions
 
 - Example:
     - Transfer 5000 naira -> database updates balances safely
@@ -91,6 +74,7 @@ Before databases, systems used file storage (e.g., JSON, CSV, text files).
 ## How Databases Are Used in Systems
 
 In a typical application:
+
 ![data-flow](./diagrams/database-flow.png)
 
 The database is the source of truth.
