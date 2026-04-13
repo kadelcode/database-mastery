@@ -11,7 +11,7 @@ CREATE TABLE users (
 CREATE TABLE transactions (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id),
-    amount DECIMAL,
-    type VARCHAR(10), -- 'credit' or 'debit'
+    amount DECIMAL(15, 2) NOT NULL,
+    type VARCHAR(10) NOT NULL CHECK (type IN ('credit', 'debit')), -- 'credit' or 'debit'
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
