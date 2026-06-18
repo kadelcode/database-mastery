@@ -12,7 +12,7 @@ GROUP BY u.id, u.name;
 -- JSON Query (NoSQL-like)
 SELECT
     data->>'name' AS name,
-    jsonb array elements(data->'orders') AS order_info
+    jsonb_array_elements(data->'orders') AS order_info
 FROM user_orders_json;
 
 -- Extract Nested JSON Fields
