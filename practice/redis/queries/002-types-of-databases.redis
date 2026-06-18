@@ -1,0 +1,6 @@
+GET user:1:name
+GET user:2:name
+
+HGETALL order:1
+HGETALL order:2
+HGETALL order:3
