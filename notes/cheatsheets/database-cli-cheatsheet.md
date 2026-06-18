@@ -251,7 +251,7 @@ show collections
 ### Create collection:
 
 ```javascript
-db.createCollections("users")
+db.createCollection("users")
 ```
 
 ### Drop collection:
