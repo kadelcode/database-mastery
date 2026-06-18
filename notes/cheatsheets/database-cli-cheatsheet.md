@@ -137,7 +137,7 @@ SELECT current_database();
 ### Insert
 
 ```sql
-INSERT INTO (name)
+INSERT INTO users (name)
 VALUES ('Alice');
 ```
 
