@@ -137,7 +137,7 @@ SELECT current_database();
 ### Insert
 
 ```sql
-INSERT INTO (name)
+INSERT INTO users (name)
 VALUES ('Alice');
 ```
 
@@ -251,7 +251,7 @@ show collections
 ### Create collection:
 
 ```javascript
-db.createCollections("users")
+db.createCollection("users")
 ```
 
 ### Drop collection:
