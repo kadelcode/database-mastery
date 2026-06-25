@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin123
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -17,7 +17,7 @@ services:
     image: mongo:6
     container_name: mongo-mastery
     ports:
-      - "27017:27017"
+      - "127.0.0.1:27017:27017"
     volumes:
       - mongodata:/data/db
 
@@ -26,7 +26,7 @@ services:
     container_name: redis-mastery
     command: redis-server --appendonly yes
     ports:
-      - "6379:6379"
+      - "127.0.0.1:6379:6379"
     volumes:
       - redisdata:/data
 
