@@ -1,0 +1,6 @@
+SET user:1:name "Alice"
+SET user:2:name "Bob"
+
+HSET order:1 product "Laptop" amount 1200
+HSET order:2 product "Mouse" amount 25
+HSET order:3 product "Keyboard" amount 75
