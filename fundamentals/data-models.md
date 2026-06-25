@@ -4,27 +4,26 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Data Models](#data-models)
-  - [Objective](#objective)
-  - [What is a Data Model?](#what-is-a-data-model)
-  - [Relational Model](#relational-model)
-    - [Students](#students)
-    - [Courses](#courses)
-  - [Tables, Rows, and Columns](#tables-rows-and-columns)
-    - [Table](#table)
-    - [Row](#row)
-    - [Column](#column)
-  - [Entity-Relationship (ER) Model](#entity-relationship-er-model)
-    - [Entity](#entity)
-    - [Attribute](#attribute)
-    - [Relationship](#relationship)
-  - [ER Example](#er-example)
-  - [Mapping ER Models to Tables](#mapping-er-models-to-tables)
-  - [Key Concepts](#key-concepts)
-    - [Primary Key](#primary-key)
-    - [Foreign Key](#foreign-key)
-    - [Relationship Types](#relationship-types)
-  - [Summary](#summary)
+- [Objective](#objective)
+- [What is a Data Model?](#what-is-a-data-model)
+- [Relational Model](#relational-model)
+  - [Students](#students)
+  - [Courses](#courses)
+- [Tables, Rows, and Columns](#tables-rows-and-columns)
+  - [Table](#table)
+  - [Row](#row)
+  - [Column](#column)
+- [Entity-Relationship (ER) Model](#entity-relationship-er-model)
+  - [Entity](#entity)
+  - [Attribute](#attribute)
+  - [Relationship](#relationship)
+- [ER Example](#er-example)
+- [Mapping ER Models to Tables](#mapping-er-models-to-tables)
+- [Key Concepts](#key-concepts)
+  - [Primary Key](#primary-key)
+  - [Foreign Key](#foreign-key)
+  - [Relationship Types](#relationship-types)
+- [Summary](#summary)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -201,12 +200,19 @@ Course
 
 Enrollment
 
-| Column     |
-| ---------- |
-| student_id |
-| course_id  |
+| Column     | Key Type                  |
+| ---------- | ------------------------- |
+| student_id | Primary Key, Foreign Key  |
+| course_id  | Primary Key, Foreign Key  |
 
-Enrollment contains foreign keys that connect Students and Courses.
+The `Enrollment` table is a junction table that implements the many-to-many relationship between `Students` and `Courses`.
+
+It uses a **composite primary key** (`student_id`, `course_id`) to ensure that each student can only be enrolled in the same course once.
+
+Both columns are also **foreign keys**:
+
+- `student_id` references `students(id)`
+- `course_id` references `courses(id)`
 
 ---
 
